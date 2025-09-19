@@ -1,7 +1,7 @@
 :root {
-    --MainColor: #000000;
-    --SecondaryColor: #AAADC4;
-    --AccentColor: #4E598C;
+  --MainColor: #000000;
+  --SecondaryColor: #aaadc4;
+  --AccentColor: #4e598c;
 }
 
 @font-face {
@@ -24,4 +24,19 @@ app-root {
   flex-direction: column; /* oder row, je nach Layout */
   align-items: center; /* horizontale Zentrierung */
   min-height: 100vh; /* Höhe des Viewports nutzen */
+}
+
+@keyframes slowBlendIn {
+  from {
+    height: 300px;
+    width: 300px;
+    opacity: 0%;
+    filter: blur(5px);
+  }
+  to {
+    filter: blur(0);
+    height: 600px;
+    width: 600px;
+    opacity: 100%;
+  }
 }
