@@ -1,17 +1,31 @@
+@import "./../../../styles.scss";
+
 #hero {
   background-image: url("/assets/img/backround-hero.jpg");
-  height: 100dvh;
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
 }
 
-app-nav-bar{
-    z-index: 20;
+app-nav-bar {
+  z-index: 20;
+  position: sticky;
+  top: 0;
 }
 
 .hero-banner {
   backdrop-filter: blur(4px);
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: calc(100dvh - 5rem);
+  .hero-logo {
+    height: 600px;
+    width: 600px;
+    animation: forwards slowBlendIn 4s;
+    filter: drop-shadow(10px 28px 20px #000000);
+  }
 }
