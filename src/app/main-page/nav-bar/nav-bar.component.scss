@@ -5,28 +5,32 @@ nav {
   padding: 0 2.5rem;
   height: 5rem;
   backdrop-filter: blur(10px);
-  background-color: var(--AccentColor);
-  box-shadow: 2px 2px 5px black;
+  background-color: rgba(0, 0, 0, 0.788);
+  box-shadow: 2px 2px 5px rgb(0, 0, 0);
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
-    .quick-links{
-        width: 100%;
-        flex: 1;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        >div{
-            transition: all ease 0.2s;
-            &:hover{
-                scale: 1.1;
-            }
-            >a{
-                color: white;
-            }
-        }
+  transition: all ease 0.2s;
+  .quick-links {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    > div {
+      transition: all ease 0.2s;
+      &:hover {
+        scale: 1.1;
+      }
+      > a {
+        color: white;
+      }
     }
+  }
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.897);
+  }
 }
 
-.logo{
-    height: 9rem;
+.logo {
+  height: 9rem;
 }
