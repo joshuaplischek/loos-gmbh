@@ -1,0 +1,32 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2.5rem;
+  height: 5rem;
+  backdrop-filter: blur(10px);
+  background-color: var(--AccentColor);
+  box-shadow: 2px 2px 5px black;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+    .quick-links{
+        width: 100%;
+        flex: 1;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        >div{
+            transition: all ease 0.2s;
+            &:hover{
+                scale: 1.1;
+            }
+            >a{
+                color: white;
+            }
+        }
+    }
+}
+
+.logo{
+    height: 9rem;
+}
