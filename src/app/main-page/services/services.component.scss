@@ -4,36 +4,67 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(#1b3842 , black 80%);
-//   background-image: linear-gradient(#202020 20%, black 80%);
+  background-image: linear-gradient(#1b3842, black 80%);
+  //   background-image: linear-gradient(#202020 20%, black 80%);
   background-color: black;
   .services {
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     color: white;
     padding: 3rem 0;
-    .services-title{
+    .services-title {
       width: 80%;
       text-align: center;
-      >p {
+      > p {
         margin: 2rem 0;
       }
     }
   }
 
-  .service-categories{
+  .service-categories {
     width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
     padding: 0 3rem;
 
-    .left-service-container{
-        width: 33%;
+    .left-service-container,
+    .middle-service-container,
+    .right-service-container {
+      width: 30%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+      transition: all ease-in-out 0.3s;
+      h3 {
+        text-align: center;
+      }
+
+      p,
+      ul {
+        transition: all ease-in-out 0.2s;
+        opacity: 0;
+      }
+      > img {
+        height: auto;
+        width: 80%;
+      }
+
+      &:hover {
+        filter: drop-shadow(-8px 10px 35px #ffffff);
+        scale: 1.1;
+        p,
+        ul {
+          opacity: 1;
+        }
+      }
     }
   }
 }
