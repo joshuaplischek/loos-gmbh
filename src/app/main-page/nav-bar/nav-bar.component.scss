@@ -20,6 +20,9 @@ nav {
       transition: all ease 0.2s;
       &:hover {
         scale: 1.1;
+        a{
+          color: #e76f51;
+        }
       }
       > a {
         color: white;
