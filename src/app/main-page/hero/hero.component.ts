@@ -1,10 +1,11 @@
 import { Component, HostListener } from '@angular/core';
 import { NavBarComponent } from '../nav-bar/nav-bar.component';
 import { NgClass } from '@angular/common';
+import { MobileMenuComponent } from '../mobile-menu/mobile-menu.component';
 
 @Component({
   selector: 'app-hero',
-  imports: [NavBarComponent, NgClass],
+  imports: [NavBarComponent, NgClass, MobileMenuComponent],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss',
 })
