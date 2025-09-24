@@ -1,4 +1,5 @@
 <section id="services">
+  @if (!isMobile) {
   <div class="services">
     <div class="services-title">
       <h2>Zerspanung - Präzision nach Maß</h2>
@@ -12,11 +13,14 @@
     <div class="service-categories">
       <div class="left-service-container">
         <h3>Drehen – Flexibilität und Präzision in einem</h3>
-        <img
-          src="/assets/img/services/drehen/Okuma LB300-M 2.png"
-          alt="image of a CNC Maschine"
-        />
-        <div>
+        <div class="image-container">
+          <img
+            src="/assets/img/services/drehen/Okuma LB300-M 2.png"
+            alt="image of a CNC Maschine"
+          />
+        </div>
+
+        <div class="info-text">
           <p>
             Mit unserer CNC-Drehmaschine fertigen wir präzise Drehteile in
             verschiedenen Größen und Formen. Dank angetriebener Werkzeuge und
@@ -24,7 +28,9 @@
             Werkstücke kein Problem. Ideal für maßgeschneiderte Bauteile mit
             hoher Genauigkeit.
           </p>
-          <p>Technische Daten:</p>
+          <br />
+          <p class="technical-data">Technische Daten:</p>
+          <br />
           <ul>
             <li>Okuma LB300-M</li>
             <li>Werkstückdurchmesser bis Ø 340 mm</li>
@@ -36,13 +42,14 @@
       </div>
       <div class="middle-service-container">
         <h3>Fräsen – Hochpräzise Bearbeitung komplexer Geometrien</h3>
+        <div class="image-container">
+          <img
+            src="/assets/img/services/fräsen/Spinner VC1150.png"
+            alt="image of a CNC Maschine"
+          />
+        </div>
 
-        <img
-          src="/assets/img/services/fräsen/Spinner VC1150.png"
-          alt="image of a CNC Maschine"
-        />
-
-        <div>
+        <div class="info-text">
           <p>
             Unsere 3-Achs-Fräsmaschine ermöglicht die präzise Bearbeitung
             unterschiedlichster Materialien. Mit hohen Spindeldrehzahlen und
@@ -50,7 +57,9 @@
             gleichzeitig hochgenaue Fertigung – vom Einzelteil bis zur
             Kleinserie.
           </p>
-          <p>Technische Daten:</p>
+          <br />
+          <p class="technical-data">Technische Daten:</p>
+          <br />
           <ul>
             <li>Spinner VC 1150</li>
             <li>3-Achs CNC-Fräse</li>
@@ -61,18 +70,22 @@
       </div>
       <div class="right-service-container">
         <h3>Sägen – Effizienter Materialzuschnitt</h3>
-        <img
-          src="/assets/img/services/sägen/file-removebg-preview.png"
-          alt="image of a CNC Maschine"
-        />
-        <div>
+        <div class="image-container">
+          <img
+            src="/assets/img/services/sägen/säge.png"
+            alt="image of a CNC Maschine"
+          />
+        </div>
+        <div class="info-text">
           <p>
             Für die optimale Vorbereitung setzen wir auf unseren
             Bandsägeautomaten. So können wir Material effizient zuschneiden und
             den Grundstein für eine präzise Weiterbearbeitung legen – schnell,
             sauber und zuverlässig.
           </p>
-          <p>Technische Daten:</p>
+          <br />
+          <p class="technical-data">Technische Daten:</p>
+          <br />
           <ul>
             <li>Forte BA 321 / SIP</li>
             <li>Sägebereich bis Ø 320 mm</li>
@@ -82,6 +95,96 @@
       </div>
     </div>
   </div>
+  } @if (isMobile) {
+  <div class="mobile-services">
+    <div class="mobile-heading">
+      <h2>Zerspanung - Präzision nach Maß</h2>
+      <p>
+        Unser Ziel ist es, Ihren individuellen Anforderungen gerecht zu werden
+        und Ihnen hochpräzise Zerspanungsdienstleistungen zu bieten. Mit
+        modernster Technik und langjährigem Know-how fertigen wir zuverlässig
+        Bauteile in höchster Qualität.
+      </p>
+    </div>
+    <div class="mobile-services-container">
+      <div class="drehen mobile-card">
+        <h3>Drehen – Flexibilität und Präzision in einem</h3>
+        <img
+          src="/assets/img/services/drehen/Okuma LB300-M 2.png"
+          alt="image of cnc Maschine"
+        />
+        <div>
+          <p>
+            Mit unserer CNC-Drehmaschine fertigen wir präzise Drehteile in
+            verschiedenen Größen und Formen. Dank angetriebener Werkzeuge und
+            stabilem Reitstock sind auch komplexe Geometrien und lange
+            Werkstücke kein Problem. Ideal für maßgeschneiderte Bauteile mit
+            hoher Genauigkeit.
+          </p>
+          <br />
+          <p class="technical-data">Technische Daten:</p>
+          <br />
+          <ul>
+            <li>Okuma LB300-M</li>
+            <li>Werkstückdurchmesser bis Ø 340 mm</li>
+            <li>Drehlänge bis 900 mm</li>
+            <li>Angetriebene Werkzeuge</li>
+            <li>Reitstock für stabile Bearbeitung</li>
+          </ul>
+        </div>
+      </div>
+      <div class="fräsen mobile-card">
+        <h3>Fräsen – Hochpräzise Bearbeitung komplexer Geometrien</h3>
+        <img
+          src="/assets/img/services/fräsen/Spinner VC1150.png"
+          alt="image of a CNC Maschine"
+        />
+        <div>
+          <p>
+            Unsere 3-Achs-Fräsmaschine ermöglicht die präzise Bearbeitung
+            unterschiedlichster Materialien. Mit hohen Spindeldrehzahlen und
+            großzügigen Verfahrwegen garantieren wir eine wirtschaftliche und
+            gleichzeitig hochgenaue Fertigung – vom Einzelteil bis zur
+            Kleinserie.
+          </p>
+          <br />
+          <p class="technical-data">Technische Daten:</p>
+          <br />
+          <ul>
+            <li>Spinner VC 1150</li>
+            <li>3-Achs CNC-Fräse</li>
+            <li>Verfahrwege: X = 1150 mm, Y = 620 mm, Z = 600 mm</li>
+            <li>Spindeldrehzahl bis 14.000 U/min</li>
+          </ul>
+        </div>
+      </div>
+      <div class="sägen mobile-card">
+        <h3>Sägen – Effizienter Materialzuschnitt</h3>
+        <img
+          src="/assets/img/services/sägen/säge.png"
+          alt="image of a CNC Maschine"
+        />
+        <div>
+          <p>
+            Für die optimale Vorbereitung setzen wir auf unseren
+            Bandsägeautomaten. So können wir Material effizient zuschneiden und
+            den Grundstein für eine präzise Weiterbearbeitung legen – schnell,
+            sauber und zuverlässig.
+          </p>
+          <br />
+          <p class="technical-data">Technische Daten:</p>
+          <br />
+          <ul>
+            <li>Forte BA 321 / SIP</li>
+            <li>Sägebereich bis Ø 320 mm</li>
+            <li>Verarbeitung von Stangenmaterial bis 6.000 mm Länge</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  }
+
   <app-extra-services></app-extra-services>
   <app-elements class="elements-section"></app-elements>
 </section>
