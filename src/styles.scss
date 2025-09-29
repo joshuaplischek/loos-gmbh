@@ -10,6 +10,11 @@
   src: url(./../public/assets/fonts/Roboto-Regular.ttf);
 }
 
+body, html{
+  background-color: #0f172a;
+  min-height: 100dvh;
+}
+
 * {
   padding: 0;
   margin: 0;
