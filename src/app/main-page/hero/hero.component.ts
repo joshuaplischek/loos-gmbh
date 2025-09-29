@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, EventEmitter, HostListener, Output } from '@angular/core';
 import { NavBarComponent } from '../nav-bar/nav-bar.component';
 import { NgClass } from '@angular/common';
 import { MobileMenuComponent } from '../mobile-menu/mobile-menu.component';

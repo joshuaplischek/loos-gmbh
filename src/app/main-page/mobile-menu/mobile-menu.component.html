@@ -1,3 +1,10 @@
-<span>
-  
+<span class="menu-slider" [class.open]="mobile.isOpen">
+  <div>
+    <a (click)="closeMobileMenu()" href="#">Home</a>
+    <a (click)="closeMobileMenu()" href="#services">Leistungen</a>
+    <a (click)="closeMobileMenu()" href="#us">Über uns</a>
+    <a (click)="closeMobileMenu()" href="#contact">Kontakt</a>
+    <a (click)="closeMobileMenu()" routerLink="/imprint">Impressum</a>
+    <a (click)="closeMobileMenu()" routerLink="/privacy-policy">Datenschutz</a>
+  </div>
 </span>

@@ -34,7 +34,7 @@
     />
   </div>
   <label class="container">
-    <input type="checkbox" (change)="mobile.MenuIsOpen($event)" />
+    <input #menuToggle type="checkbox" [checked]="mobile.isOpen" (change)="mobile.MenuIsOpen($event)" />
     <div class="checkmark">
       <span></span>
       <span></span>
@@ -42,4 +42,5 @@
     </div>
   </label>
 </nav>
+<app-mobile-menu (menuClosed)="menuToggle.checked = false"></app-mobile-menu>
 }

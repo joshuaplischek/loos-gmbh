@@ -1,4 +1,5 @@
-import { HostListener, Injectable } from '@angular/core';
+import { EventEmitter, HostListener, Injectable, Output } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -17,6 +18,13 @@ export class MobileService {
       console.log(this.isOpen);
     }
     if (!event.target.checked) {
+      this.isOpen = false;
+      console.log(this.isOpen);
+    }
+  }
+
+  closeMenu() {
+    if (this.isOpen) {
       this.isOpen = false;
       console.log(this.isOpen);
     }
