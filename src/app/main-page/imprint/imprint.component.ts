@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
+import { NavBarComponent } from "../nav-bar/nav-bar.component";
+import { MobileService } from '../../services/mobile.service';
 
 @Component({
   selector: 'app-imprint',
-  imports: [],
+  imports: [NavBarComponent],
   templateUrl: './imprint.component.html',
   styleUrl: './imprint.component.scss'
 })
 export class ImprintComponent {
-
+  constructor(public mobile: MobileService){}
 }
