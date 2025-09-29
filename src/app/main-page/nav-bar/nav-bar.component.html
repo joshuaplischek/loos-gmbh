@@ -1,7 +1,12 @@
+@if (!mobile.isMobile) {
 <nav>
-    <div>
-        <img class="logo" src="/assets/img/navbar/loos-gmbh-logo-removebg-preview.png" alt="CNC Gebr. Loos Logo">
-    </div>
+  <div>
+    <img
+      class="logo"
+      src="/assets/img/navbar/loos-gmbh-logo-removebg-preview.png"
+      alt="CNC Gebr. Loos Logo"
+    />
+  </div>
   <div class="quick-links">
     <div>
       <a href="#">Home</a>
@@ -17,6 +22,24 @@
     </div>
   </div>
 </nav>
+}
 
-
-
+@if (mobile.isMobile) {
+<nav>
+  <div>
+    <img
+      class="logo"
+      src="/assets/img/navbar/loos-gmbh-logo-removebg-preview.png"
+      alt="CNC Gebr. Loos Logo"
+    />
+  </div>
+  <label class="container">
+    <input type="checkbox" (change)="mobile.MenuIsOpen($event)" />
+    <div class="checkmark">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </label>
+</nav>
+}

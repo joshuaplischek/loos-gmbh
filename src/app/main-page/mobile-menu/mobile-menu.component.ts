@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MobileService } from '../../services/mobile.service';
 
 @Component({
   selector: 'app-mobile-menu',
@@ -7,16 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './mobile-menu.component.scss',
 })
 export class MobileMenuComponent {
-  isOpen: boolean = false;
 
-  MenuIsOpen(event: any) {
-    if (event.target.checked) {
-      this.isOpen = true;
-      console.log(this.isOpen);
-    }
-    if (!event.target.checked) {
-      this.isOpen = false;
-      console.log(this.isOpen);
-    }
-  }
+  constructor(public mobile: MobileService){}
+
 }

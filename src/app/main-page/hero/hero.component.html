@@ -1,12 +1,8 @@
 <section id="hero">
-  @if(isMobile){
-  <app-mobile-menu></app-mobile-menu>
-  } @if (!isMobile) {
   <app-nav-bar></app-nav-bar>
-  }
   <div class="hero-banner">
     <img
-      [ngClass]="{ 'hero-logo': true, mobile: isMobile }"
+      [ngClass]="{ 'hero-logo': true, mobile: mobile.isMobile }"
       src="/assets/img/navbar/loos-gmbh-logo-removebg-preview.png"
       alt=""
     />
