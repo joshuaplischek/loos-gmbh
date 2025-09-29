@@ -1,0 +1,59 @@
+.privacy-policy {
+  min-height: 100dvh;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-wrap: break-word;
+  color: var(--MinimalFontColor);
+
+  a,
+  h2,
+  h3,
+  h1,
+  h4 {
+    color: var(--AccentColor);
+    margin: 1rem 0;
+  }
+
+  p {
+    margin: 1rem 0;
+  }
+
+  ul {
+    margin: 1rem 2rem;
+  }
+
+  li {
+    margin: 1rem 0;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  > div {
+    width: 90%;
+    background-color: var(--SecondaryColor);
+    border-radius: 2rem;
+    height: 90dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 3rem;
+    height: 100%;
+  }
+}
+
+app-nav-bar {
+  z-index: 20;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+app-footer {
+  width: 100%;
+}
